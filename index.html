@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Landing Page for SteelSeries</title>
+</head>
+<body>
+
+
+    
+    <div class="logo">
+        <div class="logoImg">
+            <a href="index.html"><img src="images/header_img.png" alt="Steel Series Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropDown">
+                    <a href="gear.html">Gaming Gear</a>
+                    <ul class="selector">
+                        <li><a href="#">Headsets</a></li>
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Mice</a></li>
+                        <li><a href="#">Keyboards</a></li>
+                        <li><a href="#">Mousepads</a></li>
+                        <li><a href="#">Controllers</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Limited Editions</a></li>
+                        <li><a href="#">SALE</a></li>
+                    </ul>
+                </li>
+                <li class="dropDown">
+                    <a href="software.html">Software</a>
+                    <ul class="selector">
+                        <li><a href="#">GG</a></li>
+                        <li><a href="#">Engine</a></li>
+                        <li><a href="#">Moments</a></li>
+                        <li><a href="#">Sonar</a></li>
+                    </ul>
+                </li>
+                <li class="dropDown">
+                    <a href="community.html">Community</a>
+                    <ul class="selector">
+                        <li><a href="#">Aim Master</a></li>
+                        <li><a href="#">Games Giveaway</a></li>
+                        <li><a href="#">Aim Training Guides</a></li>
+                    </ul>
+                </li>
+                <li class="static"><a href="esports.html">Esports</a></li>
+                <li class="static"><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <button class="signUp">
+            <a href="#">Sign Up</a>
+        </button>
+        <button class="logIn">
+            <a href="#">Log In</a>
+        </button>
+    </div>
+
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img class="animate__animated animate__fadeIn" src="images/top.jpg" style="width:100%">
+          <button class="learn">
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img class="animate__animated animate__fadeIn" src="images/keyboard.jpg" style="width:100%">
+          <button class="learn">
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img class="animate__animated animate__fadeIn" src="images/mouse.jpg" style="width:100%">
+          <button class="learn">
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="animate__animated animate__fadeIn" src="images/headset.jpg" style="width:100%">
+            <button class="learn">
+              <a href="#">Learn More</a>
+            </button>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div class="dot-container" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+
+
+
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+
+
+
+    <div class="footer">
+        <img class="footerLogo" src="images/footer.png">
+    </div>
+</body>
+
+
+
+</html>

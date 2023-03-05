@@ -1,0 +1,236 @@
+html, body {
+    margin: 0px;
+    background-color: black;
+}
+
+
+/*header container*/
+.logo {
+    background-color: black;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+}
+
+
+/*header image*/
+.logoImg img {
+    height: 75px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+/*nav*/
+nav {
+    justify-content: center;
+    align-items: center;
+    padding-left: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li.dropDown {
+    position: relative;
+    display: flex;
+    height: 50px;
+}
+nav ul.selector {
+    display: none;
+}
+nav ul .dropDown {
+    padding-right: 75px;
+    margin-top: 12px;
+}
+.static {
+    padding-right: 75px;
+    margin-top: 12px;
+}
+
+
+/*button rule*/
+button {
+    margin-top: 20px;
+    transition-duration: 0.4s;
+}
+
+/*signUp button, learn button*/
+.signUp, .learn {
+    background-color: rgb(255, 98, 0);
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    height: 40px
+}
+.learn {
+    position: absolute;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50px;
+    margin-left: 50px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.learn a {
+    text-decoration: none;
+    color: white;
+}
+.signUp a {
+    text-decoration: none;
+    color: white;
+}
+.learn:hover {
+    background-color: white;
+}
+.signUp:hover {
+    background-color: white;
+}
+.learn:hover a {
+    color: rgb(255, 98, 0);
+}
+.signUp:hover a {
+    color: rgb(255, 98, 0);
+}
+
+/*logIn button*/
+.logIn {
+    background-color: black;
+    border: none;
+    color: rgb(255, 98, 0);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    height: 40px
+}
+.logIn a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*Carousel CSS*/
+* {box-sizing:border-box}
+
+/*Slideshow container*/
+.slideshow-container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+/*Hide the images by default*/
+.mySlides {
+    display: none;
+}
+
+/*Next and previous buttons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/*Position the "next button" to the right*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add a black background color with a little bit transparency*/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*Caption text*/
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/*Number text (1/4 etc)*/
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*Dots/bullets/indicators*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-container {
+    background-color: black;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/*Fading animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.footer {
+    background-color:rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLogo {
+    height: 100%;
+}
+
